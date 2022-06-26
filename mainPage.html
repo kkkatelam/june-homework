@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mainPage</title>
+  </head>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"
+  ></script>
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>Bootstrap demo</title>
+      <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+        crossorigin="anonymous"
+      />
+    </head>
+    <body>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"
+      ></script>
+    </body>
+  </html>
+  <style>
+    :root {
+      --border-radius: 5px;
+      --border: 1.5px solid #6c63ff;
+      --box-shadow: 0 5px 10px rgba(128, 102, 102, 0.3);
+      --font-size: 48px;
+      --color: #6c63ff;
+      --padding: 20px 15px;
+    }
+    body {
+      text-align: center;
+      font-family: sans-serif;
+      margin-bottom: 80px;
+    }
+
+    h1 {
+      font-size: var(--font-size);
+      margin: 0;
+      margin-top: 100px;
+      font-weight: normal;
+    }
+
+    h2 {
+      font-size: 96px;
+      margin: 0;
+    }
+
+    h3 {
+      margin-top: 0;
+      font-size: 24px;
+      opacity: 0.7;
+    }
+
+    .button {
+      display: flex;
+      justify-content: center;
+    }
+    #A,
+    #B {
+      margin: 30px;
+    }
+    #A,
+    #B,
+    .C {
+      padding: var(--padding);
+      font-size: 15px;
+      border-style: none;
+      border: var(--border);
+      border-radius: var(--border-radius);
+      box-shadow: var(--box-shadow);
+    }
+
+    #A,
+    .C {
+      background-color: var(--color);
+      color: white;
+    }
+
+    .C {
+      margin-top: 48px;
+      display: flex;
+      align-items: flex-start;
+    }
+
+    #B {
+      color: var(--color);
+      background: white;
+    }
+
+    #A:hover,
+    #B:hover,
+    .C:hover {
+      color: #0a58ca;
+      cursor: pointer;
+      transition: 50ms;
+    }
+    .navbar-nav {
+      text-align: left;
+    }
+
+    .headline {
+      font-size: var(--font-size);
+    }
+
+    .content {
+      font-size: 18px;
+    }
+    .col-md-6 {
+      margin-top: 40px;
+    }
+
+    @media (max-width: 576px) {
+      .content,
+      .headline {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .headline {
+        font-size: 30px;
+        font-weight: 100px;
+      }
+      .C {
+        display: block;
+        margin: 0 auto;
+        width: 90%;
+      }
+
+      .col-md-6 {
+        margin-top: 20px;
+      }
+
+      h1 {
+        font-size: 32px;
+      }
+
+      h2 {
+        font-size: 48px;
+      }
+
+      h3 {
+        font-size: 20px;
+      }
+    }
+  </style>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light px-5 fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="mainPage.html">Kate Lam</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contactMe.html">About me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contactMe.html#contact">Contact me</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <h1 id="sayHi">👋 Hi I am</h1>
+    <h2>Kate Lam</h2>
+    <h3>🇭🇰 Front-end developer, based in Hong Kong</h3>
+    <div class="button">
+      <a href="contactMe.html#contact">
+        <input type="button" div id="A" value="Contact Me"
+      /></a>
+      <a href="contactMe.html"
+        ><input type="button" div id="B" value="About Me"
+      /></a>
+    </div>
+
+    <div class="container">
+      <div class="row text-start">
+        <div class="col-md-6">
+          <span class="d-none d-sm-block">
+            <img
+              src="https://31ukq.codesandbox.io/images/yoga.png"
+              class="img-fluid"
+          /></span>
+        </div>
+        <div class="col-md-6">
+          <div class="headline">Yoga app</div>
+          <br /><span class="content"
+            >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Perferendis quia, dignissimos nam ratione veniam quibusdam porro
+            omnis quam vel eos eveniet alias temporibus deserunt veritatis
+            minima fugiat explicabo eum dolore.</span
+          ><br />
+          <a href="mainPage.html#sayHi" style="text-decoration: none"
+            ><button class="C">Launch Yoga App</button></a
+          >
+        </div>
+
+        <div class="col-md-6">
+          <div class="headline">Weather app</div>
+          <br />
+          <span class="content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+            quia, dignissimos nam ratione veniam quibusdam porro omnis quam vel
+            eos eveniet alias temporibus deserunt veritatis minima fugiat
+            explicabo eum dolore.</span
+          ><br />
+
+          <a href="mainPage.html#sayHi" style="text-decoration: none"
+            ><button class="C">Launch Weather App</button></a
+          >
+        </div>
+        <div class="col-md-6">
+          <span class="d-none d-sm-block">
+            <img
+              src="https://31ukq.codesandbox.io/images/weather.png"
+              class="img-fluid"
+          /></span>
+        </div>
+        <div class="col-md-6">
+          <span class="d-none d-sm-block">
+            <img
+              src="https://31ukq.codesandbox.io/images/yogurt.png"
+              class="img-fluid"
+          /></span>
+        </div>
+        <div class="col-md-6">
+          <div class="headline">Yogurt app</div>
+          <br /><span class="content"
+            >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Perferendis quia, dignissimos nam ratione veniam quibusdam porro
+            omnis quam vel eos eveniet alias temporibus deserunt veritatis
+            minima fugiat explicabo eum dolore.</span
+          ><br />
+          <a href="mainPage.html#sayHi" style="text-decoration: none"
+            ><button class="C">Launch Yogurt App</button></a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
